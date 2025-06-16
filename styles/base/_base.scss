@@ -1,5 +1,5 @@
 body{
-    background-color: #faf3f4;
+    background-color: #221f1f;
     height: 100vh;
     width: 100vw;
 }
@@ -9,16 +9,40 @@ body{
     margin: auto;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-   
+    
+    &__results{
+        max-width: 1200px;
+        min-width: 800px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(236, 195, 231);
+        box-shadow: 5px 5px 10px hsla(271, 69%, 15%, 0.274);
+        border-radius: 15px;
+        padding: 2rem;
+        color: black;  
+    }
 }
 
+form{
+    max-width: 1200px;
+    min-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgb(56, 50, 50);
+    box-shadow: 5px 5px 10px hsla(271, 69%, 15%, 0.274);
+    border-radius: 15px;
+    padding: 2rem;
+    color: whitesmoke;
+}
 
-input, .btn{
+input, .btn, select{
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 1px hsla(271, 69%, 15%, 0.274);
     border: none;
     border-radius: 5px;
@@ -27,12 +51,32 @@ input, .btn{
 input{
     width: 100%;
     position: relative;
-    text-align: right;
+
+    &:focus{
+        outline: 2px solid rgb(236, 195, 231);
+        box-shadow: 3px 3px 18px hsla(271, 69%, 15%, 0.5);
+    }
+
+    &::selection {
+        background: rgb(236, 195, 231);
+        color: #fff;
+    }
 }
 
+.input-wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+
+    & input {
+        padding-right: 30px;
+    }
+}
 
 .btn{
-    background-color: rgba(182, 250, 203, 0.747);
+    background-color: rgb(236, 195, 231);
+    color: rgb(56, 50, 50);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -45,14 +89,48 @@ input{
         color: white;
     }
 
-    &--active{
-        background-color: rgba(54, 75, 61, 0.747);
-        color: white;
-    }
+    &--delete{
+        padding: 1rem;
+        box-shadow: unset;
+        background-color: unset;
 
+
+        &:hover{
+            background-color:unset;
+            color: unset;
+            scale: 1.4;
+        }
+    }
 }
 
 
 h1 {
     text-transform: uppercase;
+    text-align: right;
+    color: whitesmoke;
+}
+
+.color{
+    color: rgb(236, 195, 231);
+}
+
+.order{
+    &__single{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2.5rem;
+        border-bottom: 2px solid whitesmoke;
+        margin-bottom: 1rem;
+        transition: .3s all ease-in-out;
+
+        &:hover{
+            background-color: #ffffff6e;
+        }
+    }
+
+    &__details{
+        display: flex;
+        gap: 2rem;
+    }
 }
