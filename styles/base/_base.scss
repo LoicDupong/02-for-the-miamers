@@ -131,6 +131,13 @@ h1 {
 
     &__details{
         display: flex;
+        align-items: center;
         gap: 2rem;
+    }
+
+    &__name{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
     }
 }
