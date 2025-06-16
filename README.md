@@ -1,18 +1,24 @@
-# Eval Js - Exo 01 | Click Click
+# Eval Js - Exo 02 | For The Miamer's
 
 ## Description
 
 
-Vous devez programmer un petit système d’activation de boutons à l’intérieur d’un conteneur. À tout moment, un seul bouton peut être actif, visuellement indiqué par une classe CSS.
+Vous devez coder une mini-application permettant de gérer une liste de type “qui prend quoi” pour un barbecue ! Chaque commande sera composée d’un nom, d’un aliment et d’une quantité. Les commandes doivent pouvoir être affichées à l’écran, puis supprimées via un bouton "☠️".
 
 
 ---
 
 ## Fonctionnalités
 
-- ✅ S’il est déjà actif, il redevient inactif
-- 📅 Sinon, tous les autres boutons deviennent inactifs et le bouton cliqué devient actif
-- ✅  Vous devez utiliser la délégation d’événement pour cibler les boutons (afin qu’on ne doive pas se soucier du nombre de boutons à gérer)
+- ✅ Utiliser un tableau d’objets pour stocker les commandes.
+- ✅Si le champ utilisateur qui prend en entrée “l’élément à apporter” est vide, affichez un message comme quoi il doit être rempli
+- ✅Créez des fonctions pour : 
+- ✅Ajouter un élément à la liste
+- ✅Mettre à jour l’affichage
+- ✅Supprimer un élément de la liste
+- ✅Et toute autre fonction qui pourrait vous sembler utile
+- ✅Le rendu ressemblera à ça : [Julie] 2x Pizza 🍕 ☠️
+
 
 ---
 
@@ -26,7 +32,7 @@ Vous devez programmer un petit système d’activation de boutons à l’intéri
 
 ## Démo
 
-[Lien vers la démo](https://loicdupong.github.io/01-click-click/)
+[Lien vers la démo](https://loicdupong.github.io/02-for-the-miamers/)
 
 ---
 
